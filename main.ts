@@ -1,0 +1,10 @@
+input.onButtonPressed(Button.A, function () {
+    makerbit.clearLcd1602()
+    basic.pause(100)
+    makerbit.showStringOnLcd1602("bit.ly/1234567", makerbit.position1602(LcdPosition1602.Pos1), 14)
+})
+makerbit.setLcdBacklight(LcdBacklight.On)
+makerbit.showStringOnLcd1602("START GAME", makerbit.position1602(LcdPosition1602.Pos3), 16)
+basic.pause(5000)
+makerbit.clearLcd1602()
+makerbit.showStringOnLcd1602("Go !!!!", makerbit.position1602(LcdPosition1602.Pos4), 14)
